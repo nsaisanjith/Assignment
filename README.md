@@ -16,14 +16,14 @@ It distributes traffic across multiple backend instances, adjusts weights dynami
 from cmd line: 
 mvn spring-boot:run
 
-# Step 2: start the Backend services on three different ports
+# Step 2: Start the Backend services on three different ports
 
 from cmd line:
 mvn spring-boot:run -Dspring-boot.run.arguments="--server.port=8043"
 mvn spring-boot:run -Dspring-boot.run.arguments="--server.port=8044"
 mvn spring-boot:run -Dspring-boot.run.arguments="--server.port=8045"
 
-# Step 3 : start the client service to send request to load balancer
+# Step 3 : Start the Client service to send request to Load balancer
 
 from cmd line:
 mvn spring-boot:run
